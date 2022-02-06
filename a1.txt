@@ -21,9 +21,9 @@ encryptedSymmetricKey = public_key.encrypt(
  )
 )
 
-with open("encryptedSymmertricKey.key", "wb") as key_file:
+with open("encrypt/encryptedSymmertricKey.key", "wb") as key_file:
   key_file.write(encryptedSymmetricKey)
-  filePath = "/home/kali/a1/FileToEncrypt.txt"
+  filePath = "/home/kali/a1/encrypt/FileToEncrypt.txt"
 
 with open(filePath, "rb") as file:
  file_data = file.read()
